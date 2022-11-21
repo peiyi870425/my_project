@@ -7,14 +7,18 @@
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
   },
   "dependencies": {
+    "@babel/runtime": "^7.20.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.19.6",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "rimraf": "^3.0.2"
