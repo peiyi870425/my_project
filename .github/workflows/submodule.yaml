@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Checkout submodules
-        run: git submodule update --init --recursive
+      - name: Checkout private tools
+        uses: actions/checkout@v3
+        with:
+          submodules: 'true'
+          #repository: peiyi870425/my_project #commercial-mgcp/
+          token: ${{ secrets.PAT }} # `GH_PAT` is a secret that contains your PAT
     
