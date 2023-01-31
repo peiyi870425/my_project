@@ -13,6 +13,5 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: 'true'
-          #repository: peiyi870425/my_project #commercial-mgcp/
-          token: ${{ secrets.PAT }} # `GH_PAT` is a secret that contains your PAT
+          token: ${{ secrets.PAT }}
     
